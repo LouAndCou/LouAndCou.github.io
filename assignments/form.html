@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        p {
+            font-family: sans-serif;
+            font-style: bold;
+        }
+
+        #hudjw {
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            border: solid 1px;
+            border-color: black;
+        }
+
+        #a {
+            font-style: normal;
+            vertical-align: middle;
+        }
+
+        input {
+            width: 200px;
+        }
+
+        p {
+            border: solid;
+            width: 200px;
+        }
+
+        .a {
+            width: 20px;
+        }
+
+        textarea {
+            width: 98.5%;
+        }
+
+        .label {
+            display: inline-block;
+            width: 112px;
+            height: 30px;
+        }
+
+        select {
+            width: 206px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Payment information</legend>
+            <label class='label'>Name</label>
+            <input type="text" placeholder="Please enter your full name">
+            <br>
+            <label class='label'>Email</label>
+            <input type="text" placeholder="Please enter your email">
+            <br>
+            <label class='label'>Phone</label>
+            <input type="text" placeholder="Please enter your phone number">
+            <br>
+            <label class='label'>City</label>
+            <select name="" id="">
+			<option value="">Toronto</option>
+			<option value="">Regina</option>
+			<option value="">London</option>
+		</select>
+            <br>
+            <label>Payment options</label>
+            <input class='a' type="radio" name='payment'>
+
+            <label>Master card</label>
+            <input class='a' type="radio" name='payment'>
+
+            <label>Visa</label>
+            <input class='a' type="radio" name='payment'>
+
+            <label>Paypal</label>
+        </fieldset>
+
+        <textarea cols="80" rows="10" placeholder="Please enter your comments"></textarea><br>
+
+        <input id='hudjw' type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+

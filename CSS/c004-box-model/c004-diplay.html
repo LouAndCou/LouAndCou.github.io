@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div#block {
+            border: solid red;
+            /*            width: 200px;*/
+            /*            height: 200px;*/
+        }
+
+        div#inline {
+            border: solid blue;
+            display: inline;
+        }
+
+        div#inline-block {
+            border: solid lime;
+            display: inline-block;
+        }
+
+        .we {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>'Block' Element</h1>
+    <ul>
+        <li>its width = page width</li>
+        <li>no height</li>
+        <li>can set width and height</li>
+    </ul>
+    <div id='block'></div>
+
+
+    <h1>'Inline' Element</h1>
+    <ul>
+        <li>no width</li>
+        <li>has height equal to font size</li>
+        <li>can not use width and height</li>
+    </ul>
+    <div id="inline"></div>
+
+
+    <h1>'Inline-block' Element</h1>
+    <ul>
+        <li>no width and no height</li>
+        <li> can set width and height</li>
+    </ul>
+    <div id="inline-block"></div>
+    <div class='we'></div>
+</body>
+</html>

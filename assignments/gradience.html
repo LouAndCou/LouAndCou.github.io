@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+			display: inline-block;
+        }
+		
+        #l1 {
+            background: linear-gradient(to bottom right, teal, white);
+        }
+
+        #l2 {
+            background: linear-gradient(to bottom left, teal, white);
+        }
+
+        #l3 {
+            background: linear-gradient(to top right, teal, white);
+        }
+
+        #l4 {
+            background: linear-gradient(to top left, teal, white);
+        }
+		
+		@media screen and (max-width:419px) {
+			div {
+				width: 100px;
+				height: 100px;
+			}
+		}
+    </style>
+</head>
+
+<body>
+    <div id='l1'></div>
+    <div id='l2'></div>
+	<br>
+    <div id='l3'></div>
+    <div id='l4'></div>
+</body>
+</html>
+
+

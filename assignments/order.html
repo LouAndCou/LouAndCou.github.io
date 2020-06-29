@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+		fieldset {
+			padding: 30px 50px;
+		}
+		#gender {
+			width: 50px;
+		}
+		
+        p {
+            font-family: sans-serif;
+            font-style: bold;
+        }
+
+        #hudjw {
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            border: solid 1px;
+            border-color: black;
+        }
+
+        #a {
+            font-style: normal;
+            vertical-align: middle;
+        }
+
+        input {
+            width: 200px;
+        }
+
+        p {
+            border: solid;
+            width: 200px;
+        }
+
+        .a {
+            width: 20px;
+        }
+
+        textarea {
+            width: 98.5%;
+        }
+
+        .label {
+            display: inline-block;
+            width: 112px;
+            height: 30px;
+        }
+
+        select {
+            width: 206px;
+        }
+
+        img {
+            width: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1>Order Form</h1>
+           <fieldset>
+            <legend>My Information</legend>
+            <select id="gender" name='gender'>
+			<option value="mr">Mr.</option>
+			<option value="mrs">Mrs.</option>
+			<option value="ms">Ms.</option>
+			<option value="miss">Miss.</option>
+		</select>
+            <br>
+            <label class='label'>Name</label>
+            <input type="text" name='name' placeholder="Please enter your full name">
+            <br>
+            <label class='label'>Email</label>
+            <input type="email" name='email' placeholder="Please enter your email">
+            <br>
+            <label class='label'>Phone</label>
+            <input type="tel" name='phone' placeholder="Please enter your phone number">
+            <br>
+            <label class='label'>City</label>
+            <select name="" id="">
+			<option value="">Toronto</option>
+			<option value="">Regina</option>
+			<option value="">London</option>
+		</select>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Order Information</legend>
+
+            <input class='a' type="checkbox" name='payment'>
+            <img src="https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <input class='a' type="checkbox" name='payment'>
+            <img src="https://images.pexels.com/photos/103886/pexels-photo-103886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <input class='a' type="checkbox" name='payment'>
+            <img src="https://images.pexels.com/photos/9734/food-sausage-puff-pastry-hot-dog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <input class='a' type="checkbox" name='payment'>
+            <img src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+			<br>
+			<label for="">People (1-4):</label>
+			<input type="range" min=1 max=4>
+			
+			<br>
+            <label>Payment options</label>
+            <input class='a' type="radio" name='payment'>
+            <label>Master card</label>
+
+            <input class='a' type="radio" name='payment'>
+            <label>Visa</label>
+
+            <input class='a' type="radio" name='payment'>
+            <label>Paypal</label>
+			
+            <input class='a' type="radio" name='payment'>
+            <label>Cash (at door)</label>
+        </fieldset>
+        <textarea cols="80" rows="10" placeholder="Please enter your comments"></textarea>
+        <br>
+        <input id='hudjw' type="submit">
+        <input id='hudjw' type="reset">
+    </form>
+</body>
+
+</html>

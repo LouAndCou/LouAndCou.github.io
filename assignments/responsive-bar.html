@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#b {
+			float: right;
+		}
+
+		#a {
+			float: left;
+		}
+
+		div {
+			height: 50px;
+			background-color: orangered;
+			margin-bottom: 10px;
+			width: 50%;
+            display: inline-block;
+		}
+
+		@media all and (max-width:992px) {
+			div {
+				display: block;
+				width: 100%;
+			}
+			#b,#a {
+				float: none;
+			}
+	</style>
+</head>
+
+<body>
+	<div id="a">teens programming</div>
+	<div id="b">technologies courses about contact</div>
+</body>
+
+</html>
+
+

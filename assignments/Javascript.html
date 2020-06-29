@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        #j {
+        body {
+            padding: 100px;
+        }
+
+        #avascript:first-letter {
             color: tomato;
             font-family: monospace;
             font-size: 120px;
@@ -15,32 +20,37 @@
             font-size: 40px;
             font-family: monospace;
         }
-        #JAVASCRIPT {
+
+        p {
+            font-family: sans-serif;
+        }
+
+        #JAVASCRIPT span {
             font-family: sans-serif;
             color: teal;
-            text-indent: 33px
         }
-        #is {
-           font-family: sans-serif 
+
+        #JAVASCRIPT:first-line {
+            font-weight: bold;
         }
-        #paragraph {
-            font-family: sans-serif
+
+        #JAVASCRIPT {
+            text-indent: 33px;
         }
-        #wikepidia {
+
+        #wikepedia {
             text-decoration: underline;
-            text-align: right
+            text-align: right;
+            font-style: italic;
         }
     </style>
 </head>
 
 <body>
 
-    <h1 id="j">J</h1>
-    <h1 id="avascript">avascript</h1>
-    <p id="JAVASCRIPT">JAVASCRIPT</p>
-    <p><b id="is">is a high level, untyped, and interperted</b></p>
-    <p id="paragraph">programming language. It has been standardized in the EMCAScript language <br>specification.  Alongside HTML and CSS, it is one of the three essential <br> technologies of World Wide Web content production.</p>
-    <br>
-    <i id="wikepedia">From Wikepedia, the free encyclopedia</i>
+    <h1 id="avascript">Javascript</h1>
+    <p id="JAVASCRIPT"><span>JAVASCRIPT</span> is a high level, untyped, and interperted programming language. It has been standardized in the EMCAScript language specification. Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production;</p>
+    <p id="wikepedia">From Wikepedia, the free encyclopedia</p>
 </body>
+
 </html>

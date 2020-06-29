@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    li:first-child {
+        background-color: blue;
+    }
+    li:last-child {
+    background-color: lime;
+    }
+    li:nth-child(2) {
+        background-color: teal;
+    }
+    li:hover {
+        font-size: 25em;
+    }
+    li:active {
+        background-color: orange;
+    }
+    li:before {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background-color: red;
+    }
+    li:after {
+        content: url(/img/Tortoise.gif);
+        width: 15px;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>poopsy</li>
+        <li>pantsys</li>
+        <li>rohan</li>
+    </ul>
+</body>
+</html>

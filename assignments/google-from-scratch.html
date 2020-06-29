@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		header ul a {
+			color: #484848;
+			text-decoration: none;
+			font-family: sans-serif;
+			font-size: 14px;
+		}
+
+
+		header ul {
+			list-style: none;
+		}
+
+		#left {
+			float: left;
+			/*            border: solid;*/
+		}
+
+		#right {
+			float: right;
+			margin: 30px;
+			/*            border: solid;*/
+			margin-top: 11px;
+		}
+
+		#right #account {
+			vertical-align: middle
+		}
+
+		#right li {
+			margin-left: 25px;
+		}
+
+		#left li {
+			margin-left: 25px;
+		}
+
+		header ul li {
+			display: inline-block;
+		}
+
+		#apps {
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			background-position: -137px -43px;
+			background-image: url(http://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+			text-indent: -1000px;
+			opacity: 0.6;
+			margin-bottom: -6px;
+		}
+
+		#apps:hover {
+			opacity: 1;
+		}
+
+		#notification {
+			background-color: red;
+			border-radius: 50%;
+			width: 23px;
+			height: 23px;
+			color: white;
+			text-align: center;
+			background-image;
+			font-family: sans-serif;
+			box-sizing: border-box;
+			margin-bottom: 5px;
+			padding-top: 3px;
+		}
+
+		#account {
+			background-image: url(https://lh3.googleusercontent.com/-ty6I4tD7rxI/AAAAAAAAAAI/AAAAAAAAAAA/AIcfdXCWPIX5rKd9lve1ZZi01KaFBJTNjw/s64-c-mo/photo.jpg);
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+		}
+
+		div {
+			text-align: center;
+			font-family: sans-serif
+		}
+
+		#main {
+			text-align: center;
+			/*            border: solid;*/
+			padding: 200px 0px 160px 0px;
+		}
+
+		#logo {
+			width: 273px;
+		}
+
+		/*
+        ul {
+            border: solid blue;
+        }
+*/
+
+		#searchbar {
+			width: 450px;
+			height: 38px;
+			/*            border: solid;*/
+			box-shadow: 1px 1px 5px gray;
+			margin: auto;
+
+			margin-top: 35px;
+		}
+        #searchbar input {
+            outline: none;
+            font-size: 20px;
+        }
+
+		#icon {
+			vertical-align: middle;
+			width: 30px;
+		}
+
+		input {
+			height: 34px;
+			width: 86%;
+			padding: 0;
+			margin: 0;
+			border: none;
+
+		}
+
+		button {
+			margin-top: 20px;
+			font-size: 14px;
+			border: none;
+			background-color: #ededed;
+			margin-left: 10px;
+			padding: 10px 20px;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		/* footer */
+
+		footer ul {
+			list-style: none;
+		}
+
+		footer ul li {
+			display: inline-block;
+		}
+
+		#left2 {
+			float: left;
+		}
+
+		#left3 {
+			float: left
+		}
+
+		footer {
+			background-color: #f2f2f2;
+			overflow: auto;
+			font-family: sans-serif;
+		}
+
+		footer a {
+			color: gray;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<ul id="left">
+			<li><a href="">About</a></li>
+			<li><a href="">Store</a></li>
+		</ul>
+		<ul id="right">
+			<li><a href="">Gmail</a></li>
+			<li><a href="">Images</a></li>
+			<li id="apps"></li>
+			<li id="notification">2</li>
+			<li id="account"></li>
+		</ul>
+	</header>
+
+	<div id="main">
+		<img id="logo" src="https://www.google.ca/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
+
+		<div id="searchbar">
+
+			<input type="text">
+			<img id="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACTUlEQVR4Ae2XU7fdQBiGv3Nd27aVmV23QXVT2+4vqG3jX9S2rdvaVpLjM8dIZ8pJ1rYxz1rvNt5nsHcCgjAjEFhWmrIlf4G6Oe++sjk/73fIA3VL/iL2HMQzAzbnN1C2kKu0sOUu8hZyfcj2/IZxPPLO8u4l4nIm2BJhBf0Jey3EG2yd+yvAXhuHAvl5AQjkxuMMWIFECISGEKhIcQEhIATKhUBoCIGyRBMQAkKAnIEsGutvso5D9RAOpzOBI7t//xqGiiwuWZEQeMYL5J2DjsDBTuL9FZA3598Gju8y6sQL6Cp6GgmBy7wAOQszHDMw3+8Z2ELmAIeh4lm8gKmiyxBu8s/AGl6A3j/qPKmn5S75LL+JXAQHpopPOATWhH8GTkJXToClJPsctLIvI1LPh8Ql9hpbeVlqR0uX2ZaQjLtFaiM/dT8LzpnIn/9nT+SysNvsMXCDrqGT9g0sPYNIkX8aRrPitpyGJRAktPByVpqPrknjIv1zeosXyN1X45qhoWUBl1fwUlq4wiFwHyJN4WloSk6Dzspn76lx/f/Gk47rSq9W4ANdQy0NBR11FGdJ/zEUt4BokHsO+uXsrXnJTYkSQ0OHTBVNY5szY4SrqjG4U2V229TwVFr8IHuNu/eZqkuGaKIPkfrRQgYrEEp0FWVw5aPLN6VHM1ribgjlH7pZdtHnhyaNMhT02O/yGn5NrydZAGkQT+iqqyv7FzVU6drXofjdDw2RHxrO/zoEf6CFr1PJjeYQLPHF4xbpwDiLD8Q/QiD6CAEhIBAIfgIDXvSOOYNfugAAAABJRU5ErkJggg==" alt="">
+		</div>
+
+		<button>Google Search</button>
+		<button>I'm Feeling Lucky</button>
+
+		<br>
+		<div>Google offered in: <a href="https://www.google.com/">Français</a></div>
+	</div>
+	<footer>
+		<ul id="left2">
+			<li><a href="">Canada</a></li>
+		</ul>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<ul id="left3">
+			<li><a href="">Advertising</a></li>
+			<li><a href="">Buisness</a></li>
+		</ul>
+		<ul id="right">
+			<li><a href="">Privacy</a></li>
+			<li><a href="">Terms</a></li>
+			<li><a href="">Settings</a></li>
+		</ul>
+	</footer>
+</body>
+
+</html>
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #container {
+            border: solid;
+            height: 400px;
+            width: 400px;
+            position: relative;
+        }
+        img {
+            width: 400px;
+/*            position: static;*/
+/*            position: relative;*/
+            position: absolute;
+/*            left: 123px;*/
+            top: 48px;
+/*            bottom: 48px;*/
+            right: 123px;
+        }
+        #ad {
+            background-image: url(/img/DSCN0122.JPG);
+            height: 400px;
+            width: 300px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+       <img src="/img/DSCN0122.JPG" alt="">
+    </div>
+    <div id="ad"></div>
+</body>
+</html>

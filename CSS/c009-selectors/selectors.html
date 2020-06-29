@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    ul {
+        font-size: 50px;
+    }
+/*    tag selector*/
+    li {
+        color: blue;
+    }
+/*    class selector*/
+    .first {
+        color: red;
+    }
+/*    id selector*/
+    #first {
+        color: palevioletred;
+/*    important*/
+    }
+    .first {
+        color: fuchsia!important;
+    }
+/*    [abc]*/
+    [abc] {
+        color: darkcyan;
+    }
+/*    pesudo selectors*/
+    li:last-child {
+        color: red;                                            
+    }
+    </style>
+</head>
+<body>
+    <h1>!important>inline>id>[abc]=class>tag</h1>
+    <h1>If they have the same priority, the order matters and the longer selectors have a greater priority than shorter selectors.</h1>
+       <ul>
+        <li class='first' id="first"
+        style='color: black' abc='first'>rohan</li>
+        <li>poopsy</li>
+        <li>pantsys</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style>
+		html {
+			text-align: center;
+			font-family: sans-serif;
+		}
+
+		body {
+			margin: 0px;
+		}
+
+		header {
+			background-color: #2c3e50;
+			color: white;
+			overflow: auto;
+			position: fixed;
+			width: 100%;
+			z-index: 2;
+		}
+
+		#logo {
+			float: left;
+			border: solid 10px #2c3e50
+		}
+
+		ul {
+			list-style: none;
+			float: right;
+			/*        border: solid;*/
+			margin-top: 30px;
+		}
+
+		li {
+			display: inline-block;
+			border: solid 10px #2c3e50;
+		}
+
+		#title {
+			padding-top: 200px;
+			background-color: #18bc9c;
+			color: white;
+			font-size: 2.5em;
+			padding-bottom: 108px;
+		}
+
+		#title hr {
+			background-color: white;
+			border: none;
+			height: 5px;
+			width: 300px;
+		}
+
+		h3 {
+			font-size: 30px;
+		}
+
+		h4 {
+			font-size: 5rem;
+			color: #2c3e50;
+		}
+
+		#star {
+			color: white;
+			position: relative;
+			top: -50px;
+			border: solid 8px #18bc9c;
+			background-color: #18bc9c;
+		}
+
+		img {
+			width: 290px;
+			height: 209px;
+			padding: 16px;
+		}
+
+		#title img {
+			width: 256px;
+			height: 256px;
+		}
+
+		#portfolio hr {
+			background-color: #2c3e50;
+			border: none;
+			height: 5px;
+			width: 300px;
+		}
+
+		#star1 {
+			color: #2c3e50;
+			position: relative;
+			top: -46px;
+			border: solid 8px white;
+			background-color: white;
+			font-size: 40px;
+		}
+
+		#portfolio {
+			padding-bottom: 100px;
+		}
+
+		/* About */
+
+		#about h4 {
+			color: white;
+			margin-bottom: 50px;
+		}
+
+		#about {
+			background-color: #18bc9c;
+			overflow: auto;
+			padding-bottom: 100px;
+			text-align: center;
+		}
+
+		#about hr {
+			background-color: white;
+			border: none;
+			height: 5px;
+			width: 300px;
+		}
+
+		#about #star {
+			font-size: 28px;
+			position: relative;
+			top: -35px;
+		}
+
+		#about #content {
+			margin: auto;
+			width: 60%;
+			text-align: left;
+			overflow: auto;
+		}
+
+		#left,
+		#right {
+			color: white;
+			font-size: 20px;
+			width: 44%;
+			line-height: 30px;
+		}
+
+		#left {
+			float: left;
+		}
+
+		#right {
+			float: right;
+		}
+
+		#download {
+			color: white;
+			border-radius: 5px;
+			background-color: transparent;
+			font-size: 20px;
+			border-color: white;
+			border: solid 2px;
+			padding: 20px 29px;
+		}
+
+		#download i {
+			margin-right: 12px;
+		}
+
+		#contact-me input {
+			font-size: 25px;
+			width: 600px;
+			border: none;
+			border-bottom: solid 2px #ebebeb;
+			padding: 30px;
+		}
+
+		#send {
+			background-color: #18bc9c;
+			padding: 1rem 1.75rem;
+			font-size: 1.25rem;
+			color: white;
+			border-radius: 5px;
+			border: none;
+			text-align: left;
+		}
+
+		#contact-me {
+			padding-bottom: 100px;
+		}
+
+		#contact-me hr {
+			width: 300px;
+		}
+
+		#message {
+			padding-bottom: 50px;
+		}
+
+		/*		footer */
+
+		#footer {
+			color: white;
+			background-color: #2c3e50;
+		}
+
+		#sub-footer {
+			background-color: #1b252f;
+			color: white;
+			margin: 0;
+		}
+
+		#location,
+		#around,
+		#about-freelancer {
+			width: 100%;
+			border: none;
+		}
+
+		.icon {
+			font-size: 20px;
+			border-radius: 50%;
+			border: solid;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+		}
+
+        #footer h5 {
+            font-size: 30px
+        }
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1 id="logo"><strong>START BOOTSTRAP</strong></h1>
+		<ul>
+			<li><strong>PORTFOLIO</strong></li>
+			<li><strong>ABOUT</strong></li>
+			<li><strong>CONTACT</strong></li>
+		</ul>
+	</header>
+	<div id="title"><img src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/profile.png" alt="">
+		<h1>START BOOTSTRAP</h1>
+		<hr><i id="star" class="fas fa-star"></i>
+		<h3>Web Developer - Graphic Artist - User Experience Designer</h3>
+	</div>
+	<div id="portfolio">
+		<h4>PORTFOLIO</h4>
+		<hr><i id="star1" class="fas fa-star"></i>
+		<div id="pictures"><img src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png" alt=""><img src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png" alt=""><img src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png" alt=""><img src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/game.png" alt=""><img src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/safe.png" alt=""><img src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/submarine.png" alt=""></div>
+	</div>
+	<div id="about">
+		<h4>ABOUT</h4>
+		<hr><i id="star" class="fas fa-star"></i>
+		<div id="content">
+			<p id="left">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+			<p id="right">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+		</div><button id="download"><i class="fas fa-download"></i>Download Now!</button></div>
+	<div id="contact-me">
+		<h4>CONTACT ME</h4>
+		<hr><i id="star1" class="fas fa-star"></i><br><input type="text" placeholder="Name"><br><input type="text" placeholder="Email Address"><br><input type="text" placeholder="Phone Number"><br><input id="message" type="text" placeholder="Message"><br><button id="send">Send</button></div>
+	<div id="footer">
+		<div id="location">
+			<h5 id="l-title">LOCATION</h5>
+			<p>2215 John Daniel Drive Clark, MO 65243</p>
+		</div>
+		<div id="around">
+			<h5 id="a-title">AROUND THE WEB</h5><i class="fab fa-facebook-f icon"></i><i class="fab fa-google-plus-g icon"></i><i class="fab fa-twitter icon"></i><i class="fab fa-linkedin-in icon"></i><i class="fab fa-dribbble icon"></i></div>
+		<div id="about-freelancer">
+			<h5 id="f-title">ABOUT FREELANCER</h5>
+			<p>Freelancer is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+		</div>
+		<p id="sub-footer">Copyright &copy; Your Website 2018</p>
+	</div>
+</body>
+</html>
+
